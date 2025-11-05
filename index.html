@@ -6,12 +6,16 @@
     <title>Verificación de Contraseña</title>
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-image: url('IMG/foto2.jpg');
+            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que se repita */
+            color: rgb(0, 0, 0);
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 20%;
-        }
+            }
+        
         #inputContainer {
             margin-bottom: 20px;
         }
@@ -20,13 +24,13 @@
             padding: 10px;
             width: 300px;
             background-color: black;
-            color: white;
-            border: 1px solid white;
+            color: #ffffff;
+            border: 1px solid rgb(0, 0, 0);
         }
         button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: white;
+            background-color: rgb(109, 100, 100);
             color: black;
             border: none;
             cursor: pointer;
@@ -38,6 +42,12 @@
         #resultado {
             margin-top: 20px;
         }
+        .enlace-video {
+        color: rgb(3, 77, 77);
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -59,13 +69,12 @@
             resultadoDiv.innerHTML = '';
 
             if (password === 'albricias') {
-                resultadoDiv.innerHTML = '<p><a href="https://youtu.be/KFTy0tUw2Ug?si=IenVQrItgWV86C3v" style="color: white;">Haz clic aquí para ver el video</a></p>';
+                resultadoDiv.innerHTML = '<p><a href="https://youtu.be/KFTy0tUw2Ug?si=IenVQrItgWV86C3v" class="enlace-video">Haz clic aquí para ver el video</a></p>';
             } else {
-                resultadoDiv.innerHTML = '<p>Aún no has hecho la tarea requerida, intenta nuevamente.</p>';
+                resultadoDiv.innerHTML = '<p>Aún no has hecho la tarea requerida, intenta de nuevo.</p>';
             }
         }
     </script>
 
 </body>
-
 </html>
